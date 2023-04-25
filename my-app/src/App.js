@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import StatefulGreeting from './components/StatefulGreeting';
+import StatefulGreeting from './components/StatefulGreetingWithCallback';
 
 function App() {
   return (
