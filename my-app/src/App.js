@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import StatefulGreeting from './components/StatefulGreetingWithPrevState';
+import EventBinding from './components/EventBinding';
+
 
 function App() {
   return (
     <div className="App">
-      <StatefulGreeting />
+      <EventBinding />
     </div>
   );
 }
