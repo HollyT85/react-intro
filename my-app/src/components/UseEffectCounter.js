@@ -1,0 +1,35 @@
+import React, {useState, useEffect} from 'react'
+
+function UseEffectCounter() {
+    const [count, setCount] = useState(0)
+    const [time, setTime] = useState(0)
+
+    useEffect(() => {
+        document.title = count
+    }, [count])
+
+    useEffect(() => {
+        console.log('creating timer')
+        const interval = setInterval(() => {
+            console.log('Interval executed')
+            setTime(time => time + 1)
+        }, 1000)
+        return () => {
+            console.log('cleaning cleaning')
+            clearInterval(interval)
+        }
+    }, [])
+
+    return (
+    <div>
+        <button onClick={
+            () => setCount(count => count + 1)
+        }>
+            Increase Number ({count})
+        </button>
+        <h2>Counting {time}</h2>
+    </div>
+    )
+}
+
+export default UseEffectCounter

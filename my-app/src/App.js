@@ -1,9 +1,9 @@
 import "./App.css";
-import UseStateWithObjects from "./components/UseStateWithObjects";
+import USeEffectCounterContainer from "./components/USeEffectCounterContainer";
 
 function App() {
   return <div className="App">
-      <UseStateWithObjects />
+      <USeEffectCounterContainer />
   </div>;
 }
 
