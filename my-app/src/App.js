@@ -1,9 +1,10 @@
+import { HttpStatusCode } from "axios";
 import "./App.css";
-import USeEffectCounterContainer from "./components/USeEffectCounterContainer";
+import HTTPRrequests from "./components/HTTPRrequests";
 
 function App() {
   return <div className="App">
-      <USeEffectCounterContainer />
+      <HTTPRrequests />
   </div>;
 }
 
