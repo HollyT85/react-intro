@@ -21,12 +21,19 @@ export class HTTPRrequests extends Component {
     }
 
     render() {
+    const posts = this.state.posts
     return (
         <div>
             <h2>
             Posts
             </h2>
-            {JSON.stringify(this.state.posts)}
+            {
+                posts.length ? (
+                    posts.map()
+                ) :(
+                    <h4>Loading Posts...</h4>
+                )
+            }
         </div>
     )
     }
