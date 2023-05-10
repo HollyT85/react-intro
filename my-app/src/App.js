@@ -1,10 +1,9 @@
-import { HttpStatusCode } from "axios";
 import "./App.css";
-import HTTPRrequests from "./components/HTTPRrequests";
+import HTTPPost from "./components/HTTPPost";
 
 function App() {
   return <div className="App">
-      <HTTPRrequests />
+      <HTTPPost />
   </div>;
 }
 
